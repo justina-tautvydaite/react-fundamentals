@@ -26,11 +26,11 @@
     // element.textContent = 'Hello World' 💰 in React, you set this with the "children" prop
     //  element.className = 'container' 💰 in React, this is also called the "className" prop
 
+    const child1 = React.createElement(childrenType, {children: 'hello '})
+    const child2 = React.createElement(childrenType, {children: 'world'})
+
     const elementProps = {
-      children: [
-        React.createElement(childrenType, null, 'Hello '),
-        React.createElement(childrenType, null, 'World'),
-      ],
+      children: [child1, child2],
       className: 'container',
     }
 
